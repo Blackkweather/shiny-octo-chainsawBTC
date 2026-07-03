@@ -31,8 +31,14 @@ Labels in Apollo: `FR artisans batch 1`, `US home services batch 1`, `INTL artis
 ## Warm lead
 Gmail draft (marcohemma5@gmail.com → contact@nyotamusic.com): SACEM deposit automation, €490 fixed. Status: UNSENT, sitting in Drafts.
 
-## Blocked / pending
-- **Apify**: sandbox network blocks api.apify.com. Fix A: add custom connector at claude.ai/settings/connectors → `https://mcp.apify.com` (needs desktop site; mobile app can't). Fix B: environment network allowlist + new session. Unlocks Google Maps scraping (hundreds of leads incl. form-hidden emails for dentists/med spas) + Reddit/Upwork/X boards.
+## Apify — WORKING (as of Jul 4 00:50 UTC)
+- `api.apify.com` added to environment network allowlist → API token works directly via curl. Token in scratchpad `.apify_token` (also `apify_api_Kdo1...`). Account: Black Fruits / blackkfruits@gmail.com, free plan $5 credit.
+- Google Maps scraper actor: **`lukaskrivka/google-maps-with-contact-details`** (1.8M runs). Input: `{searchStringsArray:[...], locationQuery:"City, Country", maxCrawledPlacesPerSearch:15, language, skipClosedPlaces:true}`. POST to `/v2/acts/lukaskrivka~google-maps-with-contact-details/runs?token=`, poll run, GET `/v2/datasets/{defaultDatasetId}/items?clean=true`.
+- First scrape (Geneva dentists + aesthetic clinics): 30 places, 21 emails, 20 unique loaded to Apollo (label `Geneva clinics batch 4`) — NOT yet enrolled (day-1 Gmail ceiling hit).
+- The mcp.apify.com CUSTOM connector OAuth is broken (ofid errors) — ignore it, use the API-token+allowlist path.
+
+## Geneva clinics batch 4 — staged, ENROLL TOMORROW (Jul 4+) into FR sequence
+High-ticket: dentists + aesthetic surgeons (Swiss prices). 20 contacts in Apollo, label `Geneva clinics batch 4`. Enroll into FR sequence `6a484162d5bfd7001884bfd0` after getting Marco's GO, respecting ~20-25/day fresh-Gmail ramp.
 - **Apollo free plan**: search API blocked; sequences/contacts/sending all work.
 - Dashboard artifact: https://claude.ai/code/artifact/fdf1291d-9961-407f-8fc6-62f268a253be
 
