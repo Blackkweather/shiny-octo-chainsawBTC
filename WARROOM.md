@@ -37,8 +37,19 @@ Gmail draft (marcohemma5@gmail.com → contact@nyotamusic.com): SACEM deposit au
 - First scrape (Geneva dentists + aesthetic clinics): 30 places, 21 emails, 20 unique loaded to Apollo (label `Geneva clinics batch 4`) — NOT yet enrolled (day-1 Gmail ceiling hit).
 - The mcp.apify.com CUSTOM connector OAuth is broken (ofid errors) — ignore it, use the API-token+allowlist path.
 
-## Geneva clinics batch 4 — staged, ENROLL TOMORROW (Jul 4+) into FR sequence
+## Geneva clinics batch 4 — staged, ENROLL Jul 4+ into FR sequence
 High-ticket: dentists + aesthetic surgeons (Swiss prices). 20 contacts in Apollo, label `Geneva clinics batch 4`. Enroll into FR sequence `6a484162d5bfd7001884bfd0` after getting Marco's GO, respecting ~20-25/day fresh-Gmail ramp.
+
+## Swiss clinics batch 5 — staged Jul 4 (ALL OF SWITZERLAND scrape)
+6 parallel Apify runs (Zürich, Lausanne, Basel, Bern, Zug, Lugano): 240 places scraped, 181 emails, **170 unique contacts created in Apollo**, label `Swiss clinics batch 5`. Full list in `leads_switzerland.csv`. Cost: $2.13 (session Apify total ~$2.39 of $5).
+- Language split for enrollment: Lausanne→FR sequence; Zürich/Basel/Bern/Zug→need a GERMAN sequence (create before enrolling); Lugano→need ITALIAN sequence (or enroll into EN).
+- Daily ramp plan from Jul 4: ~25/day day2, ~35 day3, ~50 day4+ (single sender). Second sender doubles this — Marco declined for now.
+- 2 emails had a scraped `%20` prefix, fixed on import: info@zahnarztpraxis-bernwest.ch, info@dr-hashagen.ch.
+
+## Apollo totals (Jul 4 ~00:00 UTC)
+- Live sending: 20 (FR seq 14 + EN seq 6)
+- Staged: 190 (Geneva 20 + Switzerland 170)
+- TOTAL CRM: 210 businesses
 - **Apollo free plan**: search API blocked; sequences/contacts/sending all work.
 - Dashboard artifact: https://claude.ai/code/artifact/fdf1291d-9961-407f-8fc6-62f268a253be
 
