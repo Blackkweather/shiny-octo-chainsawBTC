@@ -1,5 +1,14 @@
 # War Room — First Client Campaign State
 
+## STRATEGY (Jul 4): CASH-FIRST. Marco chose "money this week" over scaling the cold machine.
+Two tracks: (A) fast cash = warm leads + phone calls to high-ticket clinics; (B) cold-email machine keeps running in background.
+- Fastest money, ready & waiting: **Nyota €490** (draft unsent in marcohemma5 Drafts) + **Twine $750** (application text written, not submitted).
+- **Phone calls beat cold email on speed.** 108 high-ticket Swiss clinics (aesthetic surgeons/clinics) have phone numbers — see `call_list_high_ticket.csv`. French cold-call script + offer (1'500 CHF, 50% upfront) in the "Cash This Week" artifact.
+- Demo video: Marco said NOT YET.
+- Action sheet artifact: https://claude.ai/code/artifact/158e751c-57f2-4156-89a5-3822d949ba1d
+- Today's cold send: 30 (FR seq 24 incl. 10 Geneva clinics + EN seq 6).
+
+
 _Last updated: 2026-07-03 23:40 UTC. This file lets any future Claude session resume the operation with zero context loss._
 
 ## Mission
